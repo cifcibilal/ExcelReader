@@ -91,14 +91,13 @@ namespace ExcelAcmaVeOkumaEgitim
             {
                 for (int q = 1; q <= endy - starty + 1; q++)
                 {
-                    //returnString[p - 1, q - 1] = holder[p,q].ToString();
                     if (holder[p, q] != null)
                     {
                         returnString[p - 1, q - 1] = holder[p, q].ToString();
                     }
                     else
                     {
-                        returnString[p - 1, q - 1] = ""; // Null hücreleri boş dize olarak atayın
+                        returnString[p - 1, q - 1] = " ";
                     }
                 }   
             }

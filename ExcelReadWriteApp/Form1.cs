@@ -34,8 +34,7 @@ namespace ExcelReadWriteApp
 
             string[,] read = excel.ReadRange(1, 1, satirSayisi, sutunSayisi);
             excel.Close();
-            //12 satır sayısını ifade ediyor
-            for (int i = 1; i < satirSayisi; i++) //i 1 olmasının sebebi ilk satırlar sütun ismi
+            for (int i = 1; i < satirSayisi; i++) 
             {
                 listBox1.Items.Add("{");
                 if (i <= sutunSayisi)
